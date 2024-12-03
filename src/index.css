@@ -1,0 +1,395 @@
+@tailwind base;
+
+/* @layer base {
+  html,
+  body {
+    @apply overflow-x-hidden;
+  }
+} */
+
+@tailwind components;
+@tailwind utilities;
+
+/* ___________________________________________________________________________________ */
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  --color-azul: #0C3C78;
+  --rojo-rosado: #F30A49;
+  --color-azul-marino: #090030;
+  --color-celeste: #04879C;
+  scroll-behavior: smooth;
+  --primary-theme-color: #000000;
+  --secondary-theme-color: #090030;
+  --text-color: #fff;
+  --primary-shadow-color: #8888;
+  --secondary-shadow-color: #21242c80;
+  --button-color: #61dafb;
+  --button-color-active: #fff;
+  --button-text-color: #000;
+  --primary-highlight-color: #61dafb;
+  --secondary-highlight-color: #ffd700;
+  --padding-section: 4rem 0;
+  --padding-container: 0 2rem;
+  --max-width-container: 1024px;
+  --border-radius: 0.5rem;
+  --all-transitions: all 0.25s;
+  --card-height: 55vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+.header-nav__theme-icon {
+  font-size: 1rem;
+}
+
+.header-nav__theme-menu-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 854px) {
+  .header-nav__theme-menu-container {
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+}
+
+@layer components {
+  .bt-theme {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-highlight-color);
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.25rem;
+    transition: var(--all-transitions);
+  }
+
+  .bt-theme::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: var(--primary-theme-color);
+    width: 1.625rem;
+    height: 1.625rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0.125rem 0 var(--primary-shadow-color),
+      0 0 0.25rem 0 var(--primary-shadow-color),
+      0 0 0.375rem 0 var(--primary-shadow-color),
+      0 0 0.5rem 0 var(--primary-shadow-color);
+    transition: var(--all-transitions);
+  }
+
+  .bt-theme--active {
+    background-color: var(--secondary-highlight-color);
+  }
+
+  .bt-theme--active::before {
+    left: 50%;
+  }
+}
+
+@layer components {
+  .txt-animated {
+    color: #dbd56e;
+    background: -webkit-linear-gradient(25deg, #333, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: wrap;
+    border-right: 5px solid;
+
+    animation: txt-animated 1.5s steps(90) 1.5s 1 normal both,
+      cursor 1s step-end infinite;
+    position: relative;
+  }
+
+  .dark .txt-animated {
+    background: -webkit-linear-gradient(25deg, #fff, #fff);
+    -webkit-background-clip: text;
+  }
+
+  @keyframes txt-animated {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
+
+@layer components {
+  .custom-btn {
+    width: 90px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+}
+
+@layer components {
+  .btn-3 {
+    background: rgb(0, 172, 238);
+    background: linear-gradient(0deg,
+        rgba(0, 172, 238, 1) 0%,
+        rgba(2, 126, 251, 1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+  }
+
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+
+  .btn-3:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .btn-3:hover:before {
+    height: 100%;
+  }
+
+  .btn-3:hover:after {
+    width: 100%;
+  }
+
+  .btn-3 span:hover {
+    color: rgba(2, 126, 251, 1);
+  }
+
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+  }
+
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+}
+
+/* _____________ CARD ____________________ */
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+@layer components {
+  .card {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    /* padding: 3px; */
+    position: relative;
+    border-radius: 6px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* display: flex; */
+    /* font-size: 1.5em; */
+    /* color: rgb(88 199 250 / 0%); */
+    cursor: pointer;
+    /* font-family: cursive; */
+    /* font-weight: 540; */
+  }
+
+  .card:hover {
+    color: rgb(88, 199, 250);
+    transition: color 1s;
+  }
+
+  .card:hover:before,
+  .card:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(var(--rotate),
+        #5ddcff,
+        #3c67e3 43%,
+        #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+  }
+
+  .card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(var(--rotate),
+        #5ddcff,
+        #3c67e3 43%,
+        #4e00c2);
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: spin 2.5s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+
+    100% {
+      --rotate: 360deg;
+    }
+  }
+}
+
+/* ___________________ Form ____________________ */
+@layer components {
+
+  /* General animations */
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+
+  /* Animation utilities */
+  .animate-btn1 {
+    animation: btn-anim1 1s linear infinite;
+  }
+
+  .animate-btn2 {
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+
+  .animate-btn3 {
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+
+  .animate-btn4 {
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+}
+
+/* _______________________ skils _______________________*/
+/* Custom Styles */
