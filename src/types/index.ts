@@ -6,4 +6,5 @@ export type Proyecto = {
   tecnologías: string[];
   descripcion: string;
   categoria: string;
+  linkCode:string
 };

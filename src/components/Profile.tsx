@@ -17,7 +17,7 @@ export default function Profile() {
               <button type="button" className=" custom-btn btn-3">
                 <span>
                   <a
-                    href="https://www.w3schools.com/css/css_border.asp"
+                    href="https://drive.google.com/file/d/1v3nxYcOQ8RnJBAgi-IBPU4ryofuq8eJg/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -26,9 +26,12 @@ export default function Profile() {
                 </span>
               </button>
               {/* Botón con estilo interactivo */}
-              <button className="px-6 py-2 font-semibold text-white transition duration-300 ease-in-out transform bg-green-600 rounded-lg shadow-md hover:bg-green-700 hover:scale-105">
+              <a
+                href="#projects"
+                className="px-6 py-2 font-semibold text-white transition duration-300 ease-in-out transform bg-green-600 rounded-lg shadow-md hover:bg-green-700 hover:scale-105"
+              >
                 Proyectos
-              </button>
+              </a>
             </div>
           </div>
 

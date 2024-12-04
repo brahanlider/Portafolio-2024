@@ -4,68 +4,89 @@ export const data: Proyecto[] = [
   {
     id: 1,
     url_imagen:
-      "https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75",
-    title: "Fullstack Proyecto Uno",
-    subtitle: "Aplicación web interactiva",
-    tecnologías: ["HTML", "CSS", "JavaScript", "PHP", "Laravel"],
+      "https://i.postimg.cc/cLCdrxfM/PERN-Administrador-de-Productos-25kb.webp",
+    title: "Administrador de Productos PERN",
+    subtitle: "Aplicación Fullstack para gestión de productos",
+    tecnologías: [
+      "Node.js",
+      "Express",
+      "Sequelize",
+      "TypeScript",
+      "React",
+      "React Router DOM",
+      "Tailwind CSS",
+      "PERN Stack",
+    ],
     descripcion:
-      "Este proyecto demuestra una aplicación web interactiva utilizando tecnologías modernas y prácticas de desarrollo ágil.",
+      "Este proyecto implementa una aplicación fullstack de administración de productos. Utiliza el stack PERN (PostgreSQL, Express, React, Node) para gestionar productos, permitiendo a los usuarios crear, editar y eliminar productos de manera eficiente.",
     categoria: "Fullstack",
-  },
-  {
-    id: 2,
-    url_imagen:
-      "https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75",
-    title: "Fullstack Proyecto Uno dos",
-    subtitle: "Aplicación web interactiva",
-    tecnologías: ["HTML", "CSS", "JavaScript", "PHP", "Laravel"],
-    descripcion:
-      "Este proyecto demuestra una aplicación web interactiva utilizando tecnologías modernas y prácticas de desarrollo ágil.",
-    categoria: "Fullstack",
+    linkCode: "https://delicate-cassata-95ae0a.netlify.app",
   },
 
   {
     id: 3,
-    url_imagen:
-      "https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75",
-    title: "Frontend Proyecto Dos",
-    subtitle: "Gestor de Tareas",
-    tecnologías: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
+    url_imagen: "https://i.postimg.cc/xTP2sDTN/Buscador-de-Bebidas-61-KB.webp",
+    title: "API de Bebidas",
+    subtitle: "Buscador de recetas de bebidas",
+    tecnologías: [
+      "React",
+      "typescript",
+      "react-router-dom",
+      "zod",
+      "zustand",
+      "heroicons-react",
+      "slice-pattern",
+      "api-bebidas",
+      "headleesui",
+    ],
     descripcion:
-      "Un gestor de tareas poderoso y eficiente que facilita la organización personal y profesional, implementado con React y Node.js.",
+      "Aplicación moderna para explorar recetas de bebidas usando React, TypeScript, Zustand, Zod y React Router DOM.",
     categoria: "Frontend",
+    linkCode: "https://resonant-griffin-f454d9.netlify.app",
   },
   {
     id: 4,
     url_imagen:
-      "https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75",
-    title: "Backend Proyecto Tres",
-    subtitle: "E-commerce",
-    tecnologías: ["HTML", "CSS", "JavaScript", "Ruby on Rails"],
+      "https://i.postimg.cc/cLCdrxfM/PERN-Administrador-de-Productos-25kb.webp",
+    title: "Administrador de Productos PERN",
+    subtitle: "Aplicación Backend para gestión de productos",
+    tecnologías: [
+      "Node.js",
+      "Express",
+      "Sequelize",
+      "TypeScript",
+      "React",
+      "React Router DOM",
+      "Tailwind CSS",
+      "PERN Stack",
+    ],
     descripcion:
-      "Una plataforma de comercio electrónico completa que permite a los usuarios comprar y vender productos de manera segura y eficiente.",
+      "Este proyecto implementa una aplicación fullstack de administración de productos. Utiliza el stack PERN (PostgreSQL, Express, React, Node) para gestionar productos, permitiendo a los usuarios crear, editar y eliminar productos de manera eficiente.",
     categoria: "Backend",
+    linkCode: "https://delicate-cassata-95ae0a.netlify.app",
   },
-  {
-    id: 5,
-    url_imagen:
-      "https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75",
-    title: "Fullstack Proyecto Cuatro",
-    subtitle: "Red Social",
-    tecnologías: ["HTML", "CSS", "JavaScript", "Python", "Django"],
-    descripcion:
-      "Una red social innovadora que permite la conexión y comunicación entre usuarios de todo el mundo, construida con Python y Django.",
-    categoria: "Fullstack",
-  },
+
   {
     id: 6,
-    url_imagen:
-      "https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75",
-    title: "Frontend Proyecto Cinco",
-    subtitle: "Sistema de Gestión Escolar",
-    tecnologías: ["HTML", "CSS", "JavaScript", "PHP", "Symfony"],
+    url_imagen: "https://i.postimg.cc/kgBnYJ1Y/Api-Crypto-56kb.webp",
+    title: "API Crypto",
+    subtitle: "Conversor de Monedas a Criptomonedas",
+    tecnologías: ["Zod", "Zustand", "TypeScript", "CSS", "AXIOS"],
     descripcion:
-      "Un sistema robusto de gestión escolar diseñado para mejorar la administración y el seguimiento académico en instituciones educativas.",
+      "Permite seleccionar una moneda y una criptomoneda, luego proporciona su cotización actualizada.",
     categoria: "Frontend",
+    linkCode: "https://timely-brigadeiros-8ddbc4.netlify.app",
+  },
+  {
+    id: 7,
+    url_imagen:
+      "https://i.postimg.cc/h4pYp8V0/React-TS-CSS-Modules-y-API-s-59kb.webp",
+    title: "Weather App",
+    subtitle: "Consulta el clima en tiempo real",
+    tecnologías: ["React", "TypeScript", "CSS Modules", "Axios", "Zod"],
+    descripcion:
+      "Una aplicación que permite al usuario ingresar una ciudad y un país para obtener información climática en tiempo real.",
+    categoria: "Frontend",
+    linkCode: "https://deluxe-cat-f3a7f5.netlify.app",
   },
 ];
