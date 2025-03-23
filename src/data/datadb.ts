@@ -3,6 +3,28 @@ import { Proyecto } from "../types";
 export const data: Proyecto[] = [
   {
     id: 1,
+    url_imagen: "https://i.postimg.cc/TwxPx06S/bg-devtree.webp",
+    title: "DevTree MERN",
+    subtitle: "Aplicación Fullstack para compartir enlaces",
+    tecnologías: [
+      "Node.js",
+      "Express",
+      "Bongoose",
+      "TypeScript",
+      "React",
+      "React Router DOM",
+      "@TanStack/react-query",
+      "React Hook Form",
+      "Tailwind CSS",
+      "MERN Stack",
+    ],
+    descripcion:
+      "DevTree es una plataforma en línea que permite a desarrolladores, diseñadores, ingenieros y otros profesionales u otros usuarios crear una página personalizada de enlaces para compartir su trabajo, proyectos y redes sociales en un solo lugar.",
+    categoria: "Fullstack",
+    linkCode: "https://codigoconbrahan-devtree.netlify.app",
+  },
+  {
+    id: 2,
     url_imagen:
       "https://i.postimg.cc/cLCdrxfM/PERN-Administrador-de-Productos-25kb.webp",
     title: "Administrador de Productos PERN",
