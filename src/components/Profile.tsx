@@ -17,7 +17,7 @@ export default function Profile() {
               <button type="button" className=" custom-btn btn-3">
                 <span>
                   <a
-                    href="https://drive.google.com/file/d/1v3nxYcOQ8RnJBAgi-IBPU4ryofuq8eJg/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1Aw9wJZ3dYfcYqc44tsrgDSRJiyljCEEO/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
